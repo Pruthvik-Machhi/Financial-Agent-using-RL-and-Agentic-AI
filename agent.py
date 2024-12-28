@@ -42,5 +42,5 @@ multi_ai_agent=Agent(
     markdown=True,
 )
 
-multi_ai_agent.print_response("Summarize analyst recommendation and share the latest news for NVDA",stream=True)
+multi_ai_agent.print_response("Provide a stock analysis for Apple Inc. (AAPL) including current price trends and recent market news",stream=True)
 
