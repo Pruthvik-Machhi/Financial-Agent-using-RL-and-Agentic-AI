@@ -106,3 +106,42 @@ multi_ai_agent.print_response("Provide a stock analysis for Apple Inc. (AAPL) in
 - Share **recent market news** related to Apple.
 
 This approach removes the need for manually deciding strategies, as the agents autonomously gather, process, and present the data required for smart financial decisions.
+
+## Create a Conda Environment
+
+```bash
+conda create -p <env_name> python=3.10 -y
+```
+
+## Activate Your Conda Environment
+
+```bash
+conda activate <env_path>
+```
+
+- If activating on bash terminal use this command:
+
+```bash
+source activate ./<env_name>
+```
+
+- Else, use:
+
+```bash
+conda activate <env_path>
+```
+
+## Install Dependencies from `requirements.txt`
+
+```bash
+pip install -r requirements.txt
+```
+
+## Create a `.env` File to Store Your Environment Variables
+
+```env
+OPENAI_API_KEY=""
+PHI_API_KEY=""
+GROQ_API_KEY=""
+
+```
