@@ -35,5 +35,12 @@ finance_agent=Agent(
 
 )
 
+multi_ai_agent=Agent(
+    team=[web_search_agent,finance_agent],
+    instructions=["Always include sources","Use table to display the data"],
+    show_tool_calls=True,
+    markdown=True,
+)
 
+multi_ai_agent.print_response("Summarize analyst recommendation and share the latest news for NVDA",stream=True)
 
